@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Iris Species</title>
+    <script src = "main.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="content">
+        <div class = 'background'></div>
+        <div>
+            <h1>Iris Species</h1>
+            <form>
+            <p>
+            <label for="fname">Sepal length (in cm):</label><br>
+            <input type="number" step = 0.1 id="sl" name="sepal_length"><br>
+            </p>
+            
+            <p>
+            <label for="lname">Sepal width (in cm):</label><br>
+            <input type="number" step = 0.1 id="sw" name="sepal_width"><br>
+            </p>
+        
+            <p>
+            <label for="fname">Petal length (in cm):</label><br>
+            <input type="number" step = 0.1 id="pl" name="petal_length"><br>
+            </p>    
+            
+            <p>
+            <label for="lname">Petal width (in cm):</label><br>
+            <input type="number" step = 0.1 id="pw" name="petal_width">
+            </p>
+            </form>
+        
+
+            <button class = 'button' onclick="onClickedEstimateSpecies()" type = "button"> Predict Species </button>
+            <br>
+
+    
+            <div class = 'enclosure'>
+            <div id = "species_estimated" class = "result" ><h2></h2></div>
+            </div>
+        </div>
+    </div>
+</body>
+    
+</html>
